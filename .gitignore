@@ -1,0 +1,9 @@
+# node_modules
+node_modules/
+
+# ビルド成果物（esbuildで自動生成）
+dist/
+
+# 一時的なファイルやキャッシュ
+*.log
+.DS_Store
