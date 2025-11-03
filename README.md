@@ -20,15 +20,30 @@ cd your-new-repo
 npm install
 ```
 
-### TypeScript をビルド／バンドル
-```bash
-npm run build
-```
-
-### clasp を使って GAS にデプロイ
+### GAS ログイン
 ```bash
 npx clasp login
-npx clasp push
+```
+
+### GAS にプロジェクトを作成
+```bash
+clasp create --type standalone --title "ProjectName"
+```
+
+### 生成されたファイルを修正
+rootディレクトリを修正(.clasp.json)
+```bash
+  "rootDir": "./dist",
+```
+
+timezoneを修正(appscript.json)
+```bash
+  "timeZone": "Asia/Tokyo",
+```
+
+### ビルド デプロイ
+```bash
+npm run deploy
 ```
 
 ## プロジェクト構成（ビルド後）
