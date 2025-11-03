@@ -41,6 +41,11 @@ timezoneを修正(appscript.json)
   "timeZone": "Asia/Tokyo",
 ```
 
+appscript.jsonをdistディレクトリに移動
+```bash
+mv appsscript.json ./dist/appsscript.json
+```
+
 ### ビルド デプロイ
 ```bash
 npm run deploy
