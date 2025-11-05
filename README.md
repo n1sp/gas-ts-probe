@@ -54,9 +54,10 @@ npm run deploy
 ## プロジェクト構成（ビルド後）
 ```
 /dist
-  └─ main.js      # 自動生成される
+  └─ main.js          # 自動生成される
+  └─ appsscript.json  # 生成後、移動させる
 /src
-  └─ App.ts       # ここにロジックを書いていく
+  └─ App.ts           # ここにロジックを書いていく
   └─ main.ts
 .clasp.json
 .esbuild.js
