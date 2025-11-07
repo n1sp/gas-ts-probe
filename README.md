@@ -31,13 +31,13 @@ clasp create --type standalone --title "ProjectName"
 ```
 
 ### 生成されたファイルを修正
-rootディレクトリを修正(.clasp.json)
-```bash
+rootDirプロパティの値を編集してビルド先を指定(.clasp.json)
+```json
   "rootDir": "./dist",
 ```
 
-timezoneを修正(appscript.json)
-```bash
+timeZoneプロパティの値を編集してタイムゾーンを東京に設定(appscript.json)
+```json
   "timeZone": "Asia/Tokyo",
 ```
 
