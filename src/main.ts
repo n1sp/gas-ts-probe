@@ -1,8 +1,8 @@
-import { App } from "./App";
+import { app } from "./app";
 
 interface Global {
-  App: typeof App;
+  app: typeof app;
 }
 declare const global: Global;
 // entryPoints
-global.App = App;
+global.app = app;
