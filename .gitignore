@@ -2,7 +2,9 @@
 node_modules/
 
 # ビルド成果物（esbuildで自動生成）
-dist/
+dist/*
+# sampleは除外しない
+!dist/appsscript.example.json
 
 # 一時的なファイルやキャッシュ
 *.log
