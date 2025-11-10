@@ -26,25 +26,14 @@ npm install
 npx clasp login
 ```
 
-### GAS にプロジェクトを作成
+### スクリプトIDを設定
+```json:.clasp.json
+  scriptId:"[ここにIDを入れる]"
+```
+
+appsscript.sample.jsonをappscript.jsonにリネーム
 ```bash
-clasp create --type standalone --title "ProjectName"
-```
-
-### 生成されたファイルを修正
-rootDirプロパティの値を編集してビルド先を指定(.clasp.json)
-```json
-  "rootDir": "./dist",
-```
-
-timeZoneプロパティの値を編集してタイムゾーンを東京に設定(appscript.json)
-```json
-  "timeZone": "Asia/Tokyo",
-```
-
-appscript.jsonをdistディレクトリに移動
-```bash
-mv appsscript.json ./dist/appsscript.json
+mv ./dist/appsscript.sample.json ./dist/appsscript.json
 ```
 
 ### ビルド デプロイ
