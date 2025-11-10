@@ -28,7 +28,7 @@ npx clasp login
 
 ### スクリプトIDを設定
 ```json:.clasp.json
-  scriptId:"[ここにIDを入れる]"
+  "scriptId":"[ここにIDを入れる]"
 ```
 
 appsscript.sample.jsonをappscript.jsonにリネーム
